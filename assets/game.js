@@ -33,6 +33,9 @@ function gameStart() {
 
 function winningConditions() {
     $("#game-score").text(userScore);
+    if (userScore > targetScore) {
+        console.log("YOU LOST!!!")
+    }
 }
 
 
