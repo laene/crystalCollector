@@ -1,0 +1,82 @@
+body {
+    background: black;
+}
+
+.content {
+    background: greenyellow;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+}
+
+.info-container {
+    background: skyblue;
+    width: 50%;
+}
+
+.info-title {
+    background: pink;
+    font-size: 3em;
+    margin: 20px;
+    text-align: center;
+}
+
+.info-instructions {
+    background: yellow;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px;
+}
+
+.game-container {
+    background: orange;
+    width: 50%;
+}
+
+.game-crystals {
+    background: palevioletred;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 20%;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+}
+
+
+.game-text-wrapper {
+    background: cyan;
+    display: flex;
+}
+
+.game-scores-right-container {
+    background: salmon;
+    width: 50%;
+}
+
+.game-score-container {
+    background: lavender;
+    width: 50%;
+    margin: 20px;
+
+}
+
+.game-target-score-container {
+    background: palegoldenrod;
+    margin: 20px;
+}
+
+.game-win-loss-tracker-container {
+    background: antiquewhite;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
