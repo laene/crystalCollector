@@ -31,25 +31,33 @@ function gameStart() {
     $("#game-score").text(userScore);
 };
 
-// function gamePlay() {
+// function crystalClicks() {
     
 // }
 
 
-
+//This function listens for user clicks after the page has loaded.
 window.onload = function now() {
     gameStart();
     $("#crystal-red").on('click', function() {
-        console.log("clicked!");
+        console.log("red clicked!");
+        userScore = userScore + crystals.crystalRed;
+        console.log(userScore);
     })
     $("#crystal-blue").on('click', function() {
-        console.log("clicked!");
+        console.log("blue clicked!");
+        userScore = userScore + crystals.crystalBlue;
+        console.log(userScore);
     })
     $("#crystal-yellow").on('click', function() {
-        console.log("clicked!");
+        console.log("yellow clicked!");
+        userScore = userScore + crystals.crystalYellow;
+        console.log(userScore);
     })
     $("#crystal-clear").on('click', function() {
-        console.log("clicked!");
+        console.log("clear clicked!");
+        userScore = userScore + crystals.crystalClear;
+        console.log(userScore);
     })
     
 }
