@@ -3,15 +3,14 @@ var wins = 0;
 var losses = 0;
 var userScore = 0;
 var targetScore = 0;
-var victory = false;
 
 //Now I'm storing the crystal values (currently 0) in an object.
-var crystals = {
-    crystalRed: 0,
-    crystalBlue: 0,
-    crystalYellow: 0,
-    crystalClear: 0
-}
+
+var crystalRed = 0;
+var crystalBlue = 0;
+var crystalYellow = 0;
+var crystalClear = 0;
+
 
 //START OF GAME function
 function gameStart() {
@@ -28,13 +27,25 @@ function gameStart() {
     console.log(crystals);
 
     //Prints user score to appropriate div on screen
+    userScore = 0;
     $("#game-score").text(userScore);
+
+    //Prints new losses and wins count to screen
+    $("#losses").text(losses);
+    $("#wins").text(wins);
 };
 
 function winningConditions() {
     $("#game-score").text(userScore);
     if (userScore > targetScore) {
-        console.log("YOU LOST!!!")
+        console.log("YOU LOST!!!");
+        losses++;
+        gameStart();
+    }
+    if (userScore === targetScore) {
+        console.log ("YOU WON!!!");
+        wins++;
+        gameStart();
     }
 }
 
