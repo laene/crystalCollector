@@ -42,4 +42,14 @@ window.onload = function now() {
     $("#crystal-red").on('click', function() {
         console.log("clicked!");
     })
+    $("#crystal-blue").on('click', function() {
+        console.log("clicked!");
+    })
+    $("#crystal-yellow").on('click', function() {
+        console.log("clicked!");
+    })
+    $("#crystal-clear").on('click', function() {
+        console.log("clicked!");
+    })
+    
 }
