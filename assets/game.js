@@ -52,7 +52,7 @@ function winningConditions() {
 
 
 //This function listens for user clicks after the page has loaded.
-window.onload = function now() {
+window.onload = function crystalClicks() {
     gameStart();
     //If the red crystal is clicked, add the value for red crystals
     $("#crystal-red").on('click', function() {
