@@ -2,6 +2,9 @@
 
 This is my crystal collector game! It uses HTML, CSS, JS, and JQuery. 
 
+Deployed Link:
+https://laene.github.io/crystalCollector/
+
 # Game Play
 
 The goal is to collect the right number of crystals to reach the target score.
